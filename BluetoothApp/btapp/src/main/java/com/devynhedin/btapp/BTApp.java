@@ -39,18 +39,19 @@ public class BTApp {
     int readBufferPosition;
     int counter;
     volatile boolean stopWorker;
+    public static String hello = "This is data\nfrom an\nAndroid Plugin!";
 
     public static BTApp instance = null;
 
-    public static void createInstance()
-    {
-        if(instance ==  null)
-        {
-            Log.d("status", "Instance is created successfully.");
-            instance = new BTApp();
-        }
-
-    }
+//    public static void createInstance()
+//    {
+//        if(instance ==  null)
+//        {
+//            Log.d("status", "Instance is created successfully.");
+//            instance = new BTApp();
+//        }
+//
+//    }
 
     //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {

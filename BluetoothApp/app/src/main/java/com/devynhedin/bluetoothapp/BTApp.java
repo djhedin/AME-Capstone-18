@@ -40,6 +40,7 @@ public class BTApp {
     int counter;
     volatile boolean stopWorker;
 
+    public static String hello = "This is data\nfrom an\nAndroid Plugin!";
     public static BTApp instance = null;
 
     public static void createInstance()
