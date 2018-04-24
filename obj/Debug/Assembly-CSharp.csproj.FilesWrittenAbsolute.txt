@@ -155,3 +155,5 @@
 /Users/devyn/Desktop/Capstone_Spring2018/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.xml
 /Users/devyn/Desktop/Capstone_Spring2018/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll
 /Users/devyn/Desktop/Capstone_Spring2018/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll.mdb
+/Users/devyn/Desktop/Capstone_Spring2018/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/devyn/Desktop/Capstone_Spring2018/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
