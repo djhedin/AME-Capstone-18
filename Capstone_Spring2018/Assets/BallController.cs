@@ -10,11 +10,19 @@ public class BallController : MonoBehaviour {
 	void Awake() {
 		float sz = Random.Range(0, 2) == 0 ? -1 : 1;
 		float sy = Random.Range(0, 2) == 0 ? -1 : 1;
+		float sx = Random.Range(0, 2) == 0 ? -1 : 1;
 
-		GetComponent<Rigidbody> ().velocity = new Vector3 (0f, speed * sy, speed * sz);;
+		GetComponent<Rigidbody> ().velocity = new Vector3 (speed * sx, speed * sy, speed * sz);;
 
 //		rb.velocity = new Vector3 (speed * sx, speed * sy, 0f);
-		rb.isKinematic = false;
+//		rb.isKinematic = false;
 //		rb.AddForce(initialVelocity, ForceMode.Impulse);
+	}
+	public void startGame() {
+		float sz = Random.Range(0, 2) == 0 ? -1 : 1;
+		float sy = Random.Range(0, 2) == 0 ? -1 : 1;
+		float sx = Random.Range(0, 2) == 0 ? -1 : 1;
+
+		GetComponent<Rigidbody> ().velocity = new Vector3 (speed * sx, speed * sy, speed * sz);;
 	}
 }
