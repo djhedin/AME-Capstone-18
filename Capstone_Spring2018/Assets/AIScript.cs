@@ -15,20 +15,16 @@ public class AIScript : MonoBehaviour {
 	void Update () {
 		pos = transform.position;
 
-		if (ballObject.transform.position.z > 10) {
-			if (pos.x < ballObject.transform.position.x - Random.value) {
-				pos.x += 0.15f;
-			} else {
-				pos.x -= 0.15f;
-			}
-			if (pos.y < ballObject.transform.position.y - Random.value) {
-				pos.y += 0.15f;
-			} else {
-				pos.y -= 0.15f;
-			}
-		}
-//		pos.x = ballObject.transform.position.x;
-//		pos.y = ballObject.transform.position.y;
+//		if (ballObject.transform.position.z > 10) {
+//			if (pos.x < ballObject.transform.position.x - Random.value) {
+//				pos.x += 0.15f;
+//			}
+//			if (pos.y < ballObject.transform.position.y - Random.value) {
+//				pos.y += 0.15f;
+//			}
+//		}
+		pos.x = ballObject.transform.position.x;
+		pos.y = ballObject.transform.position.y;
 
 		transform.position = pos;
 	}

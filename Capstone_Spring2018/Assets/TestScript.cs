@@ -41,16 +41,19 @@ public class TestScript : MonoBehaviour {
 
 		pos = GameObject.Find ("Main Camera").transform.position;
 
-		if (pos.x < GameObject.Find("Right Wall").transform.position.x && pos.x > GameObject.Find("Left Wall").transform.position.x) {
-			pos.x = (float)(coordinate_1 / coordinate_4) + origin.x;
-		}
-		if (pos.y < GameObject.Find("Ceiling").transform.position.y && pos.y > GameObject.Find("Floor").transform.position.y) {
-			pos.y = (float)(coordinate_2 / coordinate_4) + origin.y;
-		}
+//		if (pos.x < GameObject.Find("Right Wall").transform.position.x && pos.x > GameObject.Find("Left Wall").transform.position.x) {
+//			pos.x = (float)(coordinate_1 / coordinate_4) + origin.x;
+//		}
+//		if (pos.y < GameObject.Find("Ceiling").transform.position.y && pos.y > GameObject.Find("Floor").transform.position.y) {
+//			pos.y = (float)(coordinate_2 / coordinate_4) + origin.y;
+//		}
+//		if (pos.z > -1) {
+//			pos.z = (float)(coordinate_3 / coordinate_4) + origin.z;
+//		}
 
-//		pos.x = (float)(coordinate_1 / coordinate_4) + origin.x;
-//		pos.y = (float)(coordinate_2 / coordinate_4) + origin.y;
-		pos.z = (float)(coordinate_3 / coordinate_4) + origin.z;
+		pos.x = (float)(coordinate_1 /*/ coordinate_4*/) + origin.x;
+		pos.y = -(float)(coordinate_2 /*/ coordinate_4*/) + origin.y;
+		pos.z = -(float)(coordinate_3 /*/ coordinate_4*/) + origin.z;
 
 		GameObject.Find ("Main Camera").transform.position = pos;
 

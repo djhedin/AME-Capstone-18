@@ -44,18 +44,18 @@ public class CameraController : MonoBehaviour {
 	void Update () {
 //		string btData = jc.Get<string> ("data");
 		Vector3 pos = transform.position;
-		if (Input.GetKey("w") && pos.y <= 2.5f) {
-			pos.y += panSpeed * Time.deltaTime;
-		}
-		if (Input.GetKey("s") && pos.y >= 0.5f) {
-			pos.y -= panSpeed * Time.deltaTime;
-		}
-		if (Input.GetKey("d") && pos.x <= 2.5f) {
-			pos.x += panSpeed * Time.deltaTime;
-		}
-		if (Input.GetKey("a") && pos.x >= -2.5f) {
-			pos.x -= panSpeed * Time.deltaTime;
-		}
+//		if (Input.GetKey("w") && pos.y <= 2.5f) {
+//			pos.y += panSpeed * Time.deltaTime;
+//		}
+//		if (Input.GetKey("s") && pos.y >= 0.5f) {
+//			pos.y -= panSpeed * Time.deltaTime;
+//		}
+//		if (Input.GetKey("d") && pos.x <= 2.5f) {
+//			pos.x += panSpeed * Time.deltaTime;
+//		}
+//		if (Input.GetKey("a") && pos.x >= -2.5f) {
+//			pos.x -= panSpeed * Time.deltaTime;
+//		}
 
 		///////////////////////////////////////////////////////////////////////
 //		pos.x = ballObject.transform.position.x;

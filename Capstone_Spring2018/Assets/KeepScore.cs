@@ -19,7 +19,7 @@ public class KeepScore : MonoBehaviour {
 	
 	void Update () {
 		GetComponent<TextMesh> ().text = "AI Score: " + aiScore.ToString() + "\nPlayer Score: " + playerScore.ToString();
-		if (ballObject.transform.position.z < -1) {
+		if (ballObject.transform.position.z < -4) {
 			aiScore += 1;
 			ballObject.transform.position = new Vector3 (0f, 1.5f, 10f);
 			bController.startGame ();
